@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deactivation Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Account Deactivation</h2>
+        <form action="/deactivate_account" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="reason">Reason for Deactivation:</label>
+                <select id="reason" name="reason" required>
+                    <option value="privacy">Privacy Concerns</option>
+                    <option value="not_useful">Not Useful</option>
+                    <option value="too_time_consuming">Too Time Consuming</option>
+                    <option value="prefer_other">Prefer Another Platform</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="confirm">Confirm Deactivation:</label>
+                <input type="checkbox" id="confirm" name="confirm" required> I understand that my account will be deactivated.
+            </div>
+            <div class="form-group">
+                <button type="submit">Deactivate Account</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
