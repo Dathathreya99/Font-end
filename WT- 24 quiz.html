@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: orange;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz-question {
+            margin-bottom: 20px;
+        }
+
+        .quiz-question h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .quiz-options {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .quiz-options li {
+            margin-bottom: 10px;
+        }
+
+        .quiz-options input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .result {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.674);
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interactive Quiz</h1>
+    </header>
+
+    <div class="container">
+        <div class="quiz-question">
+            <h2>Question 1: What is the capital of India?</h2>
+            <ul class="quiz-options">
+                <li><input type="radio" name="question1" value="A"> A) New delhi</li>
+                <li><input type="radio" name="question1" value="B"> B) kolkata</li>
+                <li><input type="radio" name="question1" value="C"> C) Gujarat</li>
+                <li><input type="radio" name="question1" value="D"> D) Patna</li>
+            </ul>
+        </div>
+
+        <div class="quiz-question">
+            <h2>Question 2: Which planet is known as the Red Planet?</h2>
+            <ul class="quiz-options">
+                <li><input type="radio" name="question2" value="A"> A) Earth</li>
+                <li><input type="radio" name="question2" value="B"> B) Mars</li>
+                <li><input type="radio" name="question2" value="C"> C) Jupiter</li>
+                <li><input type="radio" name="question2" value="D"> D) Venus</li>
+            </ul>
+        </div>
+
+        <div class="quiz-question">
+            <h2>Question 3: What is the largest ocean on Earth?</h2>
+            <ul class="quiz-options">
+                <li><input type="radio" name="question3" value="A"> A) Indian Ocean</li>
+                <li><input type="radio" name="question3" value="B"> B) Atlantic Ocean</li>
+                <li><input type="radio" name="question3" value="C"> C) Arctic Ocean</li>
+                <li><input type="radio" name="question3" value="D"> D) Pacific Ocean</li>
+            </ul>
+        </div>
+
+        <button class="submit-btn" onclick="calculateScore()">Submit Quiz</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Interactive Quiz | All Rights Reserved</p>
+    </footer>
+
+   <script>
+        function calculateScore(){
+            alert("Thank you")
+        }
+   </script>
+</body>
+</html>
